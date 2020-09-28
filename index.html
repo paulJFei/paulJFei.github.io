@@ -179,10 +179,16 @@
                 <i class="far fa-calendar"></i>
               </span>
               <span class="post-meta-item-text">发表于</span>
-              
 
-              <time title="创建时间：2020-09-27 21:30:00 / 修改时间：21:43:43" itemprop="dateCreated datePublished" datetime="2020-09-27T21:30:00+08:00">2020-09-27</time>
+              <time title="创建时间：2020-09-27 21:30:00" itemprop="dateCreated datePublished" datetime="2020-09-27T21:30:00+08:00">2020-09-27</time>
             </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2020-09-28 16:32:29" itemprop="dateModified" datetime="2020-09-28T16:32:29+08:00">2020-09-28</time>
+              </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
                 <i class="far fa-folder"></i>
@@ -204,7 +210,14 @@
     <div class="post-body" itemprop="articleBody">
 
       
-          <p>#形体学操作，从图像分量信息，常应用在视觉检测，文字识别，医学图像处理，图像压缩编码。</p>
+          <h1 id="形体学操作，从图像分量信息"><a href="#形体学操作，从图像分量信息" class="headerlink" title="形体学操作，从图像分量信息"></a>形体学操作，从图像分量信息</h1><p>常应用：</p>
+<ul>
+<li>视觉检测</li>
+<li>文字识别</li>
+<li>医学图像处理</li>
+<li>图像压缩编码</li>
+</ul>
+<p>具体编码如下：</p>
 <pre><code>#形态学操作
 import matplotlib.pyplot as plt
 import cv2
@@ -241,8 +254,10 @@ for i in range(1,len(imgs)+1):
     plt.xticks([])
     plt.yticks([])
 plt.show()</code></pre>
-<p>##图片展示下次一定</p>
-
+<h2 id="图片效果展示："><a href="#图片效果展示：" class="headerlink" title="图片效果展示："></a>图片效果展示：</h2><p><img src="https://gitee.com/paulfei/paulfei/tree/master/images/opencv8_1.png" alt="opencv形体学"></p>
+<hr>
+<h3 id="在图片中腐蚀时会发现彩色线条反而加粗了，这是因为"><a href="#在图片中腐蚀时会发现彩色线条反而加粗了，这是因为" class="headerlink" title="在图片中腐蚀时会发现彩色线条反而加粗了，这是因为"></a>在图片中腐蚀时会发现彩色线条反而加粗了，这是因为</h3><pre><code>k1=np.ones((3,3),np.uint8) </code></pre>
+<h3 id="生成了一个全1的3-3矩阵k1，全1为白色，在与图像代表的矩阵进行运算时，白色区域被腐蚀，而非色区域反而得到了加强。"><a href="#生成了一个全1的3-3矩阵k1，全1为白色，在与图像代表的矩阵进行运算时，白色区域被腐蚀，而非色区域反而得到了加强。" class="headerlink" title="生成了一个全1的3*3矩阵k1，全1为白色，在与图像代表的矩阵进行运算时，白色区域被腐蚀，而非色区域反而得到了加强。"></a>生成了一个全1的3*3矩阵k1，全1为白色，在与图像代表的矩阵进行运算时，白色区域被腐蚀，而非色区域反而得到了加强。</h3>
       
     </div>
 
