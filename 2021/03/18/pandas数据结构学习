@@ -20,22 +20,20 @@
     var CONFIG = {"hostname":"example.com","root":"/","scheme":"Gemini","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":false,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}}};
   </script>
 
-  <meta name="description" content="形体学操作，从图像分量信息常应用：  视觉检测 文字识别 医学图像处理 图像压缩编码  具体编码如下： #形态学操作 import matplotlib.pyplot as plt import cv2 import numpy as np img&#x3D;cv2.imread(r&quot;E:\vscode\python\text\pic\zhexiantu002.jpg&quot;) k1&#x3D;np.o">
+  <meta name="description" content="pandas基本学习引入pandas包 ，同时引入numpyimport pandas as pd import numpy as np 用值列表生成 Series时，Pandas 默认自动生成整数索引a&#x3D;pd.Series([1,2,3,4,5,np.nan,9]) print(&quot;pandas数组a: \n&amp;#123;&amp;#125;\n&quot;.format(a))    用含日期时">
 <meta property="og:type" content="article">
-<meta property="og:title" content="openCV之形体学操作">
-<meta property="og:url" content="http://example.com/opencv%E4%B9%8B%E5%BD%A2%E4%BD%93%E5%AD%A6%E6%93%8D%E4%BD%9C/index.html">
+<meta property="og:title" content="pandas数据结构学习">
+<meta property="og:url" content="http://example.com/2021/03/18/pandas%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E5%AD%A6%E4%B9%A0">
 <meta property="og:site_name" content="海盗船长的领域">
-<meta property="og:description" content="形体学操作，从图像分量信息常应用：  视觉检测 文字识别 医学图像处理 图像压缩编码  具体编码如下： #形态学操作 import matplotlib.pyplot as plt import cv2 import numpy as np img&#x3D;cv2.imread(r&quot;E:\vscode\python\text\pic\zhexiantu002.jpg&quot;) k1&#x3D;np.o">
+<meta property="og:description" content="pandas基本学习引入pandas包 ，同时引入numpyimport pandas as pd import numpy as np 用值列表生成 Series时，Pandas 默认自动生成整数索引a&#x3D;pd.Series([1,2,3,4,5,np.nan,9]) print(&quot;pandas数组a: \n&amp;#123;&amp;#125;\n&quot;.format(a))    用含日期时">
 <meta property="og:locale" content="zh_CN">
-<meta property="og:image" content="http://example.com/images/opencv8_1.png">
-<meta property="article:published_time" content="2020-09-27T13:30:00.000Z">
-<meta property="article:modified_time" content="2021-03-18T08:38:36.289Z">
+<meta property="article:published_time" content="2021-03-18T08:18:33.000Z">
+<meta property="article:modified_time" content="2021-03-18T09:15:40.229Z">
 <meta property="article:author" content="蒲建飞">
-<meta property="article:tag" content="opencv">
+<meta property="article:tag" content="pandas">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:image" content="http://example.com/images/opencv8_1.png">
 
-<link rel="canonical" href="http://example.com/opencv%E4%B9%8B%E5%BD%A2%E4%BD%93%E5%AD%A6%E6%93%8D%E4%BD%9C/">
+<link rel="canonical" href="http://example.com/2021/03/18/pandas%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E5%AD%A6%E4%B9%A0">
 
 
 <script id="page-configurations">
@@ -48,7 +46,7 @@
   };
 </script>
 
-  <title>openCV之形体学操作 | 海盗船长的领域</title>
+  <title>pandas数据结构学习 | 海盗船长的领域</title>
   
 
 
@@ -164,7 +162,7 @@
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="http://example.com/opencv%E4%B9%8B%E5%BD%A2%E4%BD%93%E5%AD%A6%E6%93%8D%E4%BD%9C/">
+    <link itemprop="mainEntityOfPage" href="http://example.com/2021/03/18/pandas%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E5%AD%A6%E4%B9%A0">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/images/002.jpg">
@@ -177,7 +175,7 @@
     </span>
       <header class="post-header">
         <h1 class="post-title" itemprop="name headline">
-          openCV之形体学操作
+          pandas数据结构学习
         </h1>
 
         <div class="post-meta">
@@ -186,23 +184,17 @@
                 <i class="far fa-calendar"></i>
               </span>
               <span class="post-meta-item-text">发表于</span>
+              
 
-              <time title="创建时间：2020-09-27 21:30:00" itemprop="dateCreated datePublished" datetime="2020-09-27T21:30:00+08:00">2020-09-27</time>
+              <time title="创建时间：2021-03-18 16:18:33 / 修改时间：17:15:40" itemprop="dateCreated datePublished" datetime="2021-03-18T16:18:33+08:00">2021-03-18</time>
             </span>
-              <span class="post-meta-item">
-                <span class="post-meta-item-icon">
-                  <i class="far fa-calendar-check"></i>
-                </span>
-                <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2021-03-18 16:38:36" itemprop="dateModified" datetime="2021-03-18T16:38:36+08:00">2021-03-18</time>
-              </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
                 <i class="far fa-folder"></i>
               </span>
               <span class="post-meta-item-text">分类于</span>
                 <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/opencv/" itemprop="url" rel="index"><span itemprop="name">opencv</span></a>
+                  <a href="/categories/python/" itemprop="url" rel="index"><span itemprop="name">python</span></a>
                 </span>
             </span>
 
@@ -217,55 +209,25 @@
     <div class="post-body" itemprop="articleBody">
 
       
-        <h1 id="形体学操作，从图像分量信息"><a href="#形体学操作，从图像分量信息" class="headerlink" title="形体学操作，从图像分量信息"></a>形体学操作，从图像分量信息</h1><p>常应用：</p>
-<ul>
-<li>视觉检测</li>
-<li>文字识别</li>
-<li>医学图像处理</li>
-<li>图像压缩编码</li>
-</ul>
-<p>具体编码如下：</p>
-<pre><code>#形态学操作
-import matplotlib.pyplot as plt
-import cv2
-import numpy as np
-img=cv2.imread(r&quot;E:\vscode\python\text\pic\zhexiantu002.jpg&quot;)
-k1=np.ones((3,3),np.uint8)
-#腐蚀,(这里针对白色)iterations=3腐蚀次数，默认一次
-img001=cv2.erode(img,k1,iterations=1)
-#膨胀
-img002=cv2.dilate(img,k1)
-k=np.ones((2,2),np.uint8)
-#开运算
-img003=cv2.morphologyEx(img,cv2.MORPH_OPEN,k,iterations=3)
-#闭运算
-img004=cv2.morphologyEx(img,cv2.MORPH_CLOSE,k,iterations=3)
-#形体学梯度运算（膨胀减原图）
-img005=cv2.morphologyEx(img,cv2.MORPH_GRADIENT,k)
+        <h1 id="pandas基本学习"><a href="#pandas基本学习" class="headerlink" title="pandas基本学习"></a>pandas基本学习</h1><h2 id="引入pandas包-，同时引入numpy"><a href="#引入pandas包-，同时引入numpy" class="headerlink" title="引入pandas包 ，同时引入numpy"></a>引入pandas包 ，同时引入numpy</h2><pre><code>import pandas as pd
+import numpy as np</code></pre>
+<h3 id="用值列表生成-Series时，Pandas-默认自动生成整数索引"><a href="#用值列表生成-Series时，Pandas-默认自动生成整数索引" class="headerlink" title="用值列表生成 Series时，Pandas 默认自动生成整数索引"></a>用值列表生成 Series时，Pandas 默认自动生成整数索引</h3><pre><code>a=pd.Series([1,2,3,4,5,np.nan,9])
+print(&quot;pandas数组a: \n&#123;&#125;\n&quot;.format(a))</code></pre>
+ 
 
-#礼帽运算（原图减开运算图）,获得噪点或更亮的边缘信息
-img006=cv2.morphologyEx(img,cv2.MORPH_TOPHAT,k)
+<h3 id="用含日期时间索引与标签的-NumPy-数组生成-DataFrame"><a href="#用含日期时间索引与标签的-NumPy-数组生成-DataFrame" class="headerlink" title="用含日期时间索引与标签的 NumPy 数组生成 DataFrame"></a>用含日期时间索引与标签的 NumPy 数组生成 DataFrame</h3><pre><code>dates=pd.date_range(&quot;20210318&quot;, periods=8)
+print(&quot;pandas数组dates: \n&#123;&#125;\n&quot;.format(dates))
+df=pd.DataFrame(np.random.randn(8,4),index=dates, columns=list(&#39;ABCD&#39;))print(&quot;pandas数组df: \n&#123;&#125;\n&quot;.format(df))</code></pre>
+ 
 
-#黑帽运算（闭图像减原图）
-img007=cv2.morphologyEx(img,cv2.MORPH_BLACKHAT,k)
-
-title=[&quot;原图&quot;,&quot;腐蚀&quot;,&quot;膨胀&quot;,&quot;开运算&quot;,&quot;闭运算&quot;,&quot;形体学梯度运算（膨胀减原图）&quot;,&quot;礼帽运算（原图减开运算图）&quot;,&quot;黑帽运算（闭图像减原图）&quot;]
-imgs=[img,img001,img002,img003,img005,img006,img007]
-plt.rcParams[&#39;font.family&#39;]=[&#39;SimHei&#39;]
-plt.figure()
-for i in range(1,len(imgs)+1):
-    plt.subplot(3,3,i)
-    #if(np.max(imgs[i-1]) is not None):
-    plt.imshow(imgs[i-1])
-    plt.title(title[i-1])
-    plt.xticks([])
-    plt.yticks([])
-plt.show()</code></pre>
-<h2 id="图片效果展示："><a href="#图片效果展示：" class="headerlink" title="图片效果展示："></a>图片效果展示：</h2><p><img src="/images/opencv8_1.png" alt="opencv形体学"></p>
-<hr>
-<h3 id="在图片中腐蚀时会发现彩色线条反而加粗了，这是因为"><a href="#在图片中腐蚀时会发现彩色线条反而加粗了，这是因为" class="headerlink" title="在图片中腐蚀时会发现彩色线条反而加粗了，这是因为"></a>在图片中腐蚀时会发现彩色线条反而加粗了，这是因为</h3><pre><code>k1=np.ones((3,3),np.uint8) </code></pre>
-<h3 id="生成了一个全1的3-3矩阵k1，全1为白色，在与图像代表的矩阵进行运算时，白色区域被腐蚀，而非白色区域反而得到了加强。膨胀同理。"><a href="#生成了一个全1的3-3矩阵k1，全1为白色，在与图像代表的矩阵进行运算时，白色区域被腐蚀，而非白色区域反而得到了加强。膨胀同理。" class="headerlink" title="生成了一个全1的3*3矩阵k1，全1为白色，在与图像代表的矩阵进行运算时，白色区域被腐蚀，而非白色区域反而得到了加强。膨胀同理。"></a>生成了一个全1的3*3矩阵k1，全1为白色，在与图像代表的矩阵进行运算时，白色区域被腐蚀，而非白色区域反而得到了加强。膨胀同理。</h3><p>（另：开运算指图像先进行腐蚀再膨胀，可去噪，计数等；闭运算指图像先进行膨胀再腐蚀，可去除图像中的小黑点等）</p>
-
+<h3 id="更多信息"><a href="#更多信息" class="headerlink" title="更多信息"></a>更多信息</h3><pre><code>print(&quot;pandas数组df: \n&#123;&#125;\n&quot;.format(df))
+print(&quot;pandas中DataFrame类型: \n&#123;&#125;\n&quot;.format(df.dtypes))
+print(&quot;pandas中df索引: \n&#123;&#125;\n&quot;.format(df.index))
+print(&quot;pandas中df列名: \n&#123;&#125;\n&quot;.format(df.columns))
+#describe()可以快速查看数据的统计摘要：
+print(&quot;pandas中df统计摘要: \n&#123;&#125;\n&quot;.format(df.describe()))</code></pre>
+ 
+ 
     </div>
 
     
@@ -274,7 +236,7 @@ plt.show()</code></pre>
 
       <footer class="post-footer">
           <div class="post-tags">
-              <a href="/tags/opencv/" rel="tag"># opencv</a>
+              <a href="/tags/pandas/" rel="tag"># pandas</a>
           </div>
 
         
@@ -283,13 +245,10 @@ plt.show()</code></pre>
         
     <div class="post-nav">
       <div class="post-nav-item">
-    <a href="/hexo-Github-Gitee%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA/" rel="prev" title="hexo+Github+Gitee个人博客搭建">
-      <i class="fa fa-chevron-left"></i> hexo+Github+Gitee个人博客搭建
+    <a href="/2020/10/09/opencv%E4%B9%8B%E9%98%88%E5%80%BC%E5%A4%84%E7%90%86/" rel="prev" title="opencv之阈值处理">
+      <i class="fa fa-chevron-left"></i> opencv之阈值处理
     </a></div>
-      <div class="post-nav-item">
-    <a href="/HSV%E9%A2%9C%E8%89%B2%E6%8F%90%E5%8F%96/" rel="next" title="HSV颜色提取">
-      HSV颜色提取 <i class="fa fa-chevron-right"></i>
-    </a></div>
+      <div class="post-nav-item"></div>
     </div>
       </footer>
     
@@ -348,7 +307,7 @@ plt.show()</code></pre>
 
       <!--noindex-->
       <div class="post-toc-wrap sidebar-panel">
-          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#%E5%BD%A2%E4%BD%93%E5%AD%A6%E6%93%8D%E4%BD%9C%EF%BC%8C%E4%BB%8E%E5%9B%BE%E5%83%8F%E5%88%86%E9%87%8F%E4%BF%A1%E6%81%AF"><span class="nav-number">1.</span> <span class="nav-text">形体学操作，从图像分量信息</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%9B%BE%E7%89%87%E6%95%88%E6%9E%9C%E5%B1%95%E7%A4%BA%EF%BC%9A"><span class="nav-number">1.1.</span> <span class="nav-text">图片效果展示：</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%9C%A8%E5%9B%BE%E7%89%87%E4%B8%AD%E8%85%90%E8%9A%80%E6%97%B6%E4%BC%9A%E5%8F%91%E7%8E%B0%E5%BD%A9%E8%89%B2%E7%BA%BF%E6%9D%A1%E5%8F%8D%E8%80%8C%E5%8A%A0%E7%B2%97%E4%BA%86%EF%BC%8C%E8%BF%99%E6%98%AF%E5%9B%A0%E4%B8%BA"><span class="nav-number">1.1.1.</span> <span class="nav-text">在图片中腐蚀时会发现彩色线条反而加粗了，这是因为</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E7%94%9F%E6%88%90%E4%BA%86%E4%B8%80%E4%B8%AA%E5%85%A81%E7%9A%843-3%E7%9F%A9%E9%98%B5k1%EF%BC%8C%E5%85%A81%E4%B8%BA%E7%99%BD%E8%89%B2%EF%BC%8C%E5%9C%A8%E4%B8%8E%E5%9B%BE%E5%83%8F%E4%BB%A3%E8%A1%A8%E7%9A%84%E7%9F%A9%E9%98%B5%E8%BF%9B%E8%A1%8C%E8%BF%90%E7%AE%97%E6%97%B6%EF%BC%8C%E7%99%BD%E8%89%B2%E5%8C%BA%E5%9F%9F%E8%A2%AB%E8%85%90%E8%9A%80%EF%BC%8C%E8%80%8C%E9%9D%9E%E7%99%BD%E8%89%B2%E5%8C%BA%E5%9F%9F%E5%8F%8D%E8%80%8C%E5%BE%97%E5%88%B0%E4%BA%86%E5%8A%A0%E5%BC%BA%E3%80%82%E8%86%A8%E8%83%80%E5%90%8C%E7%90%86%E3%80%82"><span class="nav-number">1.1.2.</span> <span class="nav-text">生成了一个全1的3*3矩阵k1，全1为白色，在与图像代表的矩阵进行运算时，白色区域被腐蚀，而非白色区域反而得到了加强。膨胀同理。</span></a></li></ol></li></ol></li></ol></div>
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#pandas%E5%9F%BA%E6%9C%AC%E5%AD%A6%E4%B9%A0"><span class="nav-number">1.</span> <span class="nav-text">pandas基本学习</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%BC%95%E5%85%A5pandas%E5%8C%85-%EF%BC%8C%E5%90%8C%E6%97%B6%E5%BC%95%E5%85%A5numpy"><span class="nav-number">1.1.</span> <span class="nav-text">引入pandas包 ，同时引入numpy</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E7%94%A8%E5%80%BC%E5%88%97%E8%A1%A8%E7%94%9F%E6%88%90-Series%E6%97%B6%EF%BC%8CPandas-%E9%BB%98%E8%AE%A4%E8%87%AA%E5%8A%A8%E7%94%9F%E6%88%90%E6%95%B4%E6%95%B0%E7%B4%A2%E5%BC%95"><span class="nav-number">1.1.1.</span> <span class="nav-text">用值列表生成 Series时，Pandas 默认自动生成整数索引</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E7%94%A8%E5%90%AB%E6%97%A5%E6%9C%9F%E6%97%B6%E9%97%B4%E7%B4%A2%E5%BC%95%E4%B8%8E%E6%A0%87%E7%AD%BE%E7%9A%84-NumPy-%E6%95%B0%E7%BB%84%E7%94%9F%E6%88%90-DataFrame"><span class="nav-number">1.1.2.</span> <span class="nav-text">用含日期时间索引与标签的 NumPy 数组生成 DataFrame</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%9B%B4%E5%A4%9A%E4%BF%A1%E6%81%AF"><span class="nav-number">1.1.3.</span> <span class="nav-text">更多信息</span></a></li></ol></li></ol></li></ol></div>
       </div>
       <!--/noindex-->
 
