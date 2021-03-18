@@ -20,15 +20,23 @@
     var CONFIG = {"hostname":"example.com","root":"/","scheme":"Gemini","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":false,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}}};
   </script>
 
-  <meta property="og:type" content="website">
-<meta property="og:title" content="海盗船长的领域">
-<meta property="og:url" content="http://example.com/archives/index.html">
+  <meta name="description" content="HSV颜色提取图形步骤：下面以提取图片中蓝色形状物为例：       获取指定颜色HSV值，以蓝色为例：    blue &#x3D; np.uint8([[[255, 0, 0]]])   hsv_blue &#x3D; cv2.cvtColor(blue, cv2.COLOR_BGR2HSV)   print(hsv_blue)  # [[[120 255 255]]]  通过inRange()锁定特定值  基于">
+<meta property="og:type" content="article">
+<meta property="og:title" content="HSV颜色提取">
+<meta property="og:url" content="http://example.com/HSV%E9%A2%9C%E8%89%B2%E6%8F%90%E5%8F%96">
 <meta property="og:site_name" content="海盗船长的领域">
+<meta property="og:description" content="HSV颜色提取图形步骤：下面以提取图片中蓝色形状物为例：       获取指定颜色HSV值，以蓝色为例：    blue &#x3D; np.uint8([[[255, 0, 0]]])   hsv_blue &#x3D; cv2.cvtColor(blue, cv2.COLOR_BGR2HSV)   print(hsv_blue)  # [[[120 255 255]]]  通过inRange()锁定特定值  基于">
 <meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="http://example.com/HSV%E9%A2%9C%E8%89%B2%E6%8F%90%E5%8F%96/opencv.png">
+<meta property="og:image" content="http://example.com/HSV%E9%A2%9C%E8%89%B2%E6%8F%90%E5%8F%96/HSV001.png">
+<meta property="article:published_time" content="2020-09-29T13:18:52.000Z">
+<meta property="article:modified_time" content="2021-03-18T08:24:21.058Z">
 <meta property="article:author" content="蒲建飞">
+<meta property="article:tag" content="opencv">
 <meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="http://example.com/HSV%E9%A2%9C%E8%89%B2%E6%8F%90%E5%8F%96/opencv.png">
 
-<link rel="canonical" href="http://example.com/archives/">
+<link rel="canonical" href="http://example.com/HSV%E9%A2%9C%E8%89%B2%E6%8F%90%E5%8F%96">
 
 
 <script id="page-configurations">
@@ -36,12 +44,12 @@
   CONFIG.page = {
     sidebar: "",
     isHome : false,
-    isPost : false,
+    isPost : true,
     lang   : 'zh-CN'
   };
 </script>
 
-  <title>归档 | 海盗船长的领域</title>
+  <title>HSV颜色提取 | 海盗船长的领域</title>
   
 
 
@@ -150,193 +158,144 @@
         <div class="content-wrap">
           
 
-          <div class="content archive">
+          <div class="content post posts-expand">
             
 
+    
   
   
-  
-  <div class="post-block">
-    <div class="posts-collapse">
-      <div class="collection-title">
-        <span class="collection-header">嗯..! 目前共计 8 篇日志。 继续努力。</span>
-      </div>
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="http://example.com/HSV%E9%A2%9C%E8%89%B2%E6%8F%90%E5%8F%96">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/002.jpg">
+      <meta itemprop="name" content="蒲建飞">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="海盗船长的领域">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          HSV颜色提取
+        </h1>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              <time title="创建时间：2020-09-29 21:18:52" itemprop="dateCreated datePublished" datetime="2020-09-29T21:18:52+08:00">2020-09-29</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2021-03-18 16:24:21" itemprop="dateModified" datetime="2021-03-18T16:24:21+08:00">2021-03-18</time>
+              </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-folder"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/opencv/" itemprop="url" rel="index"><span itemprop="name">opencv</span></a>
+                </span>
+            </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
 
       
-    <div class="collection-year">
-      <span class="collection-header">2021</span>
-    </div>
+        <h1 id="HSV颜色提取图形步骤："><a href="#HSV颜色提取图形步骤：" class="headerlink" title="HSV颜色提取图形步骤："></a>HSV颜色提取图形步骤：</h1><h2 id="下面以提取图片中蓝色形状物为例："><a href="#下面以提取图片中蓝色形状物为例：" class="headerlink" title="下面以提取图片中蓝色形状物为例："></a>下面以提取图片中蓝色形状物为例：</h2> <img src="/HSV%E9%A2%9C%E8%89%B2%E6%8F%90%E5%8F%96/opencv.png" class="" title="原图展示">  
 
-  <article itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
 
-      <div class="post-meta">
-        <time itemprop="dateCreated"
-              datetime="2021-03-18T16:18:33+08:00"
-              content="2021-03-18">
-          03-18
-        </time>
-      </div>
+<ul>
+<li><p>获取指定颜色HSV值，以蓝色为例： </p>
+<p>  blue = np.uint8([[[255, 0, 0]]])</p>
+<p>  hsv_blue = cv2.cvtColor(blue, cv2.COLOR_BGR2HSV)</p>
+<p>  print(hsv_blue)  # [[[120 255 255]]]</p>
+</li>
+<li><p>通过inRange()锁定特定值</p>
+</li>
+<li><p>基于掩码的按位与显示ROI</p>
+</li>
+<li><p>显示特定颜色值</p>
+</li>
+</ul>
+<p>具体编码如下：</p>
+<pre><code>import cv2
+import matplotlib.pyplot as plt
+import numpy as np
+img=cv2.imread(r&quot;E:\vscode\python\text\pic\opencv.png&quot;)
+hsv=cv2.cvtColor(img,cv2.COLOR_BGR2HSV)
+minBlue=np.array([110,110,110])
+maxBlue=np.array([130,255,255])
+#蓝色区域,inRange()主要是将在两个阈值内的像素值设置为白色（255），而不在阈值区间内的像素值设置为黑色（0）
+maskB=cv2.inRange(hsv,minBlue,maxBlue)
+#掩膜控制蓝色区域，img+img在与maskB与运算，白（全1）透黑（全0）不透
+blue=cv2.bitwise_and(img,img,mask=maskB)
+#将BGR的蓝色图像转换为RGB
+blue=cv2.cvtColor(blue,cv2.COLOR_BGR2RGB)
 
-      <div class="post-title">
-          <a class="post-title-link" href="/pandas%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E5%AD%A6%E4%B9%A0" itemprop="url">
-            <span itemprop="name">pandas数据结构学习</span>
-          </a>
-      </div>
+title=[&quot;原图BGR&quot;,&quot;hsv&quot;,&quot;mask&quot;,&quot;blue&quot;]
+imgs=[img,hsv,maskB,blue]
+plt.rcParams[&#39;font.family&#39;]=[&#39;SimHei&#39;]
+plt.figure()
+for i in range(1,len(imgs)+1):
+    plt.subplot(2,2,i)
+    #if(np.max(imgs[i-1]) is not None):
+    plt.imshow(imgs[i-1])
+    plt.title(title[i-1])
+    plt.xticks([])
+    plt.yticks([])
+plt.show()</code></pre>
+<h2 id="操作效果展示："><a href="#操作效果展示：" class="headerlink" title="操作效果展示："></a>操作效果展示：</h2> <img src="/HSV%E9%A2%9C%E8%89%B2%E6%8F%90%E5%8F%96/HSV001.png" class="" title="HSV效果展示">  
 
-    </header>
-  </article>
-    <div class="collection-year">
-      <span class="collection-header">2020</span>
-    </div>
 
-  <article itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <div class="post-meta">
-        <time itemprop="dateCreated"
-              datetime="2020-10-09T20:45:19+08:00"
-              content="2020-10-09">
-          10-09
-        </time>
-      </div>
-
-      <div class="post-title">
-          <a class="post-title-link" href="/opencv%E4%B9%8B%E9%98%88%E5%80%BC%E5%A4%84%E7%90%86" itemprop="url">
-            <span itemprop="name">opencv之阈值处理</span>
-          </a>
-      </div>
-
-    </header>
-  </article>
-
-  <article itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <div class="post-meta">
-        <time itemprop="dateCreated"
-              datetime="2020-10-08T23:04:05+08:00"
-              content="2020-10-08">
-          10-08
-        </time>
-      </div>
-
-      <div class="post-title">
-          <a class="post-title-link" href="/opencv%E4%B9%8B%E5%9B%BE%E7%89%87%E4%BB%BF%E5%B0%84" itemprop="url">
-            <span itemprop="name">opencv之图片仿射</span>
-          </a>
-      </div>
-
-    </header>
-  </article>
-
-  <article itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <div class="post-meta">
-        <time itemprop="dateCreated"
-              datetime="2020-10-07T21:59:08+08:00"
-              content="2020-10-07">
-          10-07
-        </time>
-      </div>
-
-      <div class="post-title">
-          <a class="post-title-link" href="/opencv%E4%B9%8B%E5%9B%BE%E5%83%8F%E7%BF%BB%E8%BD%AC" itemprop="url">
-            <span itemprop="name">opencv之图像翻转</span>
-          </a>
-      </div>
-
-    </header>
-  </article>
-
-  <article itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <div class="post-meta">
-        <time itemprop="dateCreated"
-              datetime="2020-09-29T21:18:52+08:00"
-              content="2020-09-29">
-          09-29
-        </time>
-      </div>
-
-      <div class="post-title">
-          <a class="post-title-link" href="/HSV%E9%A2%9C%E8%89%B2%E6%8F%90%E5%8F%96" itemprop="url">
-            <span itemprop="name">HSV颜色提取</span>
-          </a>
-      </div>
-
-    </header>
-  </article>
-
-  <article itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <div class="post-meta">
-        <time itemprop="dateCreated"
-              datetime="2020-09-27T21:30:00+08:00"
-              content="2020-09-27">
-          09-27
-        </time>
-      </div>
-
-      <div class="post-title">
-          <a class="post-title-link" href="/openCV%E4%B9%8B%E5%BD%A2%E4%BD%93%E5%AD%A6%E6%93%8D%E4%BD%9C" itemprop="url">
-            <span itemprop="name">openCV之形体学操作</span>
-          </a>
-      </div>
-
-    </header>
-  </article>
-
-  <article itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <div class="post-meta">
-        <time itemprop="dateCreated"
-              datetime="2020-09-14T19:13:40+08:00"
-              content="2020-09-14">
-          09-14
-        </time>
-      </div>
-
-      <div class="post-title">
-          <a class="post-title-link" href="/2020/09/14/hexo-Github-Gitee%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA/" itemprop="url">
-            <span itemprop="name">hexo+Github+Gitee个人博客搭建</span>
-          </a>
-      </div>
-
-    </header>
-  </article>
-
-  <article itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <div class="post-meta">
-        <time itemprop="dateCreated"
-              datetime="2020-09-02T18:53:54+08:00"
-              content="2020-09-02">
-          09-02
-        </time>
-      </div>
-
-      <div class="post-title">
-          <a class="post-title-link" href="/2020/09/02/hello-world/" itemprop="url">
-            <span itemprop="name">Hello World</span>
-          </a>
-      </div>
-
-    </header>
-  </article>
 
 
     </div>
-  </div>
-  
-  
-  
 
+    
+    
+    
+
+      <footer class="post-footer">
+          <div class="post-tags">
+              <a href="/tags/opencv/" rel="tag"># opencv</a>
+          </div>
+
+        
+
+
+        
+    <div class="post-nav">
+      <div class="post-nav-item">
+    <a href="/openCV%E4%B9%8B%E5%BD%A2%E4%BD%93%E5%AD%A6%E6%93%8D%E4%BD%9C" rel="prev" title="openCV之形体学操作">
+      <i class="fa fa-chevron-left"></i> openCV之形体学操作
+    </a></div>
+      <div class="post-nav-item">
+    <a href="/opencv%E4%B9%8B%E5%9B%BE%E5%83%8F%E7%BF%BB%E8%BD%AC" rel="next" title="opencv之图像翻转">
+      opencv之图像翻转 <i class="fa fa-chevron-right"></i>
+    </a></div>
+    </div>
+      </footer>
+    
+  </article>
+  
+  
   
 
 
@@ -389,6 +348,7 @@
 
       <!--noindex-->
       <div class="post-toc-wrap sidebar-panel">
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#HSV%E9%A2%9C%E8%89%B2%E6%8F%90%E5%8F%96%E5%9B%BE%E5%BD%A2%E6%AD%A5%E9%AA%A4%EF%BC%9A"><span class="nav-number">1.</span> <span class="nav-text">HSV颜色提取图形步骤：</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E4%B8%8B%E9%9D%A2%E4%BB%A5%E6%8F%90%E5%8F%96%E5%9B%BE%E7%89%87%E4%B8%AD%E8%93%9D%E8%89%B2%E5%BD%A2%E7%8A%B6%E7%89%A9%E4%B8%BA%E4%BE%8B%EF%BC%9A"><span class="nav-number">1.1.</span> <span class="nav-text">下面以提取图片中蓝色形状物为例：</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E6%93%8D%E4%BD%9C%E6%95%88%E6%9E%9C%E5%B1%95%E7%A4%BA%EF%BC%9A"><span class="nav-number">1.2.</span> <span class="nav-text">操作效果展示：</span></a></li></ol></li></ol></div>
       </div>
       <!--/noindex-->
 
