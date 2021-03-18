@@ -181,7 +181,7 @@
               <span class="post-meta-item-text">发表于</span>
               
 
-              <time title="创建时间：2021-03-18 16:18:33 / 修改时间：20:35:47" itemprop="dateCreated datePublished" datetime="2021-03-18T16:18:33+08:00">2021-03-18</time>
+              <time title="创建时间：2021-03-18 16:18:33 / 修改时间：20:39:01" itemprop="dateCreated datePublished" datetime="2021-03-18T16:18:33+08:00">2021-03-18</time>
             </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
@@ -208,22 +208,22 @@
 import numpy as np</code></pre>
 <h3 id="用值列表生成-Series时，Pandas-默认自动生成整数索引"><a href="#用值列表生成-Series时，Pandas-默认自动生成整数索引" class="headerlink" title="用值列表生成 Series时，Pandas 默认自动生成整数索引"></a>用值列表生成 Series时，Pandas 默认自动生成整数索引</h3><pre><code>a=pd.Series([1,2,3,4,5,np.nan,9])
 print(&quot;pandas数组a: \n&#123;&#125;\n&quot;.format(a))</code></pre>
-<img src="/2021/03/18/pandas%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E5%AD%A6%E4%B9%A0/001.PNG" class="" title="展示001"> 
+<img src="/2021/03/18/pandas%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E5%AD%A6%E4%B9%A0/pandas101.PNG" class="" title="展示001"> 
 
 <h3 id="用含日期时间索引与标签的-NumPy-数组生成-DataFrame"><a href="#用含日期时间索引与标签的-NumPy-数组生成-DataFrame" class="headerlink" title="用含日期时间索引与标签的 NumPy 数组生成 DataFrame"></a>用含日期时间索引与标签的 NumPy 数组生成 DataFrame</h3><pre><code>dates=pd.date_range(&quot;20210318&quot;, periods=8)
 print(&quot;pandas数组dates: \n&#123;&#125;\n&quot;.format(dates))
 df=pd.DataFrame(np.random.randn(8,4),index=dates, columns=list(&#39;ABCD&#39;))
 print(&quot;pandas数组df: \n&#123;&#125;\n&quot;.format(df))</code></pre>
-<img src="/2021/03/18/pandas%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E5%AD%A6%E4%B9%A0/002.PNG" class="" title="展示002"> 
+<img src="/2021/03/18/pandas%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E5%AD%A6%E4%B9%A0/pandas102.PNG" class="" title="展示002"> 
 
 <h3 id="更多信息"><a href="#更多信息" class="headerlink" title="更多信息"></a>更多信息</h3><pre><code>print(&quot;pandas中DataFrame类型: \n&#123;&#125;\n&quot;.format(df.dtypes))
 print(&quot;pandas中df索引: \n&#123;&#125;\n&quot;.format(df.index))
 print(&quot;pandas中df列名: \n&#123;&#125;\n&quot;.format(df.columns))
 #describe()可以快速查看数据的统计摘要：
 print(&quot;pandas中df统计摘要: \n&#123;&#125;\n&quot;.format(df.describe()))</code></pre>
-<img src="/2021/03/18/pandas%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E5%AD%A6%E4%B9%A0/003.PNG" class="" title="原图003"> 
+<img src="/2021/03/18/pandas%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E5%AD%A6%E4%B9%A0/pandas103.PNG" class="" title="原图003"> 
 
-<img src="/2021/03/18/pandas%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E5%AD%A6%E4%B9%A0/004.PNG" class="" title="原图004"> 
+<img src="/2021/03/18/pandas%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E5%AD%A6%E4%B9%A0/pandas104.PNG" class="" title="原图004"> 
       
     </div>
 
