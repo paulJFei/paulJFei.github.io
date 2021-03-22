@@ -156,6 +156,191 @@
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="http://example.com/2021/03/22/RegressionOfDL/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/002.jpg">
+      <meta itemprop="name" content="蒲建飞">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="海盗船长的领域">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/2021/03/22/RegressionOfDL/" class="post-title-link" itemprop="url">RegressionOfDL</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+              
+
+              <time title="创建时间：2021-03-22 17:13:12 / 修改时间：17:20:46" itemprop="dateCreated datePublished" datetime="2021-03-22T17:13:12+08:00">2021-03-22</time>
+            </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-folder"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0/" itemprop="url" rel="index"><span itemprop="name">深度学习</span></a>
+                </span>
+            </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <h1 id="深度学习之线性回归"><a href="#深度学习之线性回归" class="headerlink" title="深度学习之线性回归"></a>深度学习之线性回归</h1><h2 id="学习来自b站莫烦"><a href="#学习来自b站莫烦" class="headerlink" title="学习来自b站莫烦"></a>学习来自b站莫烦</h2><h3 id="代码注解如下"><a href="#代码注解如下" class="headerlink" title="代码注解如下"></a>代码注解如下</h3><pre><code>import torch
+import torch.nn.functional as F     # 激励函数都在这
+import matplotlib.pyplot as plt
+
+class Net(torch.nn.Module):  # 继承 torch 的 Module
+    def __init__(self, n_feature, n_hidden, n_output):
+        super(Net, self).__init__()     # 继承 __init__ 功能
+        # 定义每层用什么样的形式
+        self.hidden = torch.nn.Linear(n_feature, n_hidden)   # 隐藏层线性输出
+        self.predict = torch.nn.Linear(n_hidden, n_output)   # 输出层线性输出
+
+    def forward(self, x):   # 这同时也是 Module 中的 forward 功能
+        # 正向传播输入值, 神经网络分析出输出值
+        x = F.relu(self.hidden(x))      # 激励函数(隐藏层的线性值)
+        x = self.predict(x)             # 输出值
+        return x
+
+net = Net(n_feature=1, n_hidden=10, n_output=1)
+
+
+x = torch.unsqueeze(torch.linspace(-1, 1, 100), dim=1)  # x data (tensor), shape=(100, 1)
+y = x.pow(2) + 0.2*torch.rand(x.size())                 # noisy y data (tensor), shape=(100, 1)
+# optimizer 是训练的工具
+optimizer = torch.optim.SGD(net.parameters(), lr=0.5)  # 传入 net 的所有参数, 学习率
+loss_func = torch.nn.MSELoss()      # 预测值和真实值的误差计算公式 (均方差)
+
+
+
+# 实时画图
+plt.ion()  
+plt.show()
+
+for t in range(200):
+
+    prediction = net(x)     # 喂给 net 训练数据 x, 输出预测值
+    loss = loss_func(prediction, y)     # 计算两者的误差
+    optimizer.zero_grad()   # 清空上一步的残余更新参数值
+    loss.backward()         # 误差反向传播, 计算参数更新值
+    optimizer.step()        # 将参数更新值施加到 net 的 parameters 上
+
+    # 接着上面来
+    if  t % 5 == 0:
+        # plot and show learning process
+        plt.cla()
+        plt.scatter(x.data.numpy(), y.data.numpy())
+        plt.plot(x.data.numpy(), prediction.data.numpy(), &#39;r-&#39;, lw=5)
+        plt.text(0.5, 0, &#39;Loss=%.4f&#39; % loss.data.numpy(), fontdict=&#123;&#39;size&#39;: 20, &#39;color&#39;:  &#39;red&#39;&#125;)
+        plt.pause(0.1)
+plt.ioff()
+plt.show()</code></pre>
+<img src="/2021/03/22/RegressionOfDL/Figure_1.png" class="" title="静态示001"> 
+<img src="/2021/03/22/RegressionOfDL/Regression1-1.gif" class="" title="动态示001">
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="http://example.com/2021/03/19/Numpy%E5%90%8CTorch/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/002.jpg">
+      <meta itemprop="name" content="蒲建飞">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="海盗船长的领域">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/2021/03/19/Numpy%E5%90%8CTorch/" class="post-title-link" itemprop="url">Numpy同Torch</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+              
+
+              <time title="创建时间：2021-03-19 20:54:39 / 修改时间：20:55:35" itemprop="dateCreated datePublished" datetime="2021-03-19T20:54:39+08:00">2021-03-19</time>
+            </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-folder"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/python/" itemprop="url" rel="index"><span itemprop="name">python</span></a>
+                </span>
+            </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
     <link itemprop="mainEntityOfPage" href="http://example.com/2021/03/18/pandas%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E5%AD%A6%E4%B9%A0/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -1019,20 +1204,20 @@ plt.show()</code></pre>
       <div class="site-state-item site-state-posts">
           <a href="/archives/">
         
-          <span class="site-state-item-count">8</span>
+          <span class="site-state-item-count">10</span>
           <span class="site-state-item-name">日志</span>
         </a>
       </div>
       <div class="site-state-item site-state-categories">
             <a href="/categories/">
           
-        <span class="site-state-item-count">3</span>
+        <span class="site-state-item-count">4</span>
         <span class="site-state-item-name">分类</span></a>
       </div>
       <div class="site-state-item site-state-tags">
             <a href="/tags/">
           
-        <span class="site-state-item-count">3</span>
+        <span class="site-state-item-count">5</span>
         <span class="site-state-item-name">标签</span></a>
       </div>
   </nav>

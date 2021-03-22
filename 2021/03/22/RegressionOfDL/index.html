@@ -20,23 +20,23 @@
     var CONFIG = {"hostname":"example.com","root":"/","scheme":"Gemini","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":false,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}}};
   </script>
 
-  <meta name="description" content="简单图片翻转图片翻转原图：   翻转函数介绍：cv.flip(img,figure) figure值的含义：  0代表x轴翻转 正数y轴翻转 负数xy翻转  具体编码：import cv2 import numpy as np import matplotlib.pyplot as plt   #图片翻转 img&#x3D;cv2.imread(r&quot;E:\vscode\python\text\pi">
+  <meta name="description" content="深度学习之线性回归学习来自b站莫烦代码注解如下import torch import torch.nn.functional as F     # 激励函数都在这 import matplotlib.pyplot as plt  class Net(torch.nn.Module):  # 继承 torch 的 Module     def __init__(self, n_feature, n_">
 <meta property="og:type" content="article">
-<meta property="og:title" content="opencv之图像翻转">
-<meta property="og:url" content="http://example.com/2020/10/07/opencv%E4%B9%8B%E5%9B%BE%E5%83%8F%E7%BF%BB%E8%BD%AC/index.html">
+<meta property="og:title" content="RegressionOfDL">
+<meta property="og:url" content="http://example.com/2021/03/22/RegressionOfDL/index.html">
 <meta property="og:site_name" content="海盗船长的领域">
-<meta property="og:description" content="简单图片翻转图片翻转原图：   翻转函数介绍：cv.flip(img,figure) figure值的含义：  0代表x轴翻转 正数y轴翻转 负数xy翻转  具体编码：import cv2 import numpy as np import matplotlib.pyplot as plt   #图片翻转 img&#x3D;cv2.imread(r&quot;E:\vscode\python\text\pi">
+<meta property="og:description" content="深度学习之线性回归学习来自b站莫烦代码注解如下import torch import torch.nn.functional as F     # 激励函数都在这 import matplotlib.pyplot as plt  class Net(torch.nn.Module):  # 继承 torch 的 Module     def __init__(self, n_feature, n_">
 <meta property="og:locale" content="zh_CN">
-<meta property="og:image" content="http://example.com/2020/10/07/opencv%E4%B9%8B%E5%9B%BE%E5%83%8F%E7%BF%BB%E8%BD%AC/100sh.jpg">
-<meta property="og:image" content="http://example.com/2020/10/07/opencv%E4%B9%8B%E5%9B%BE%E5%83%8F%E7%BF%BB%E8%BD%AC/opencv5_1.png">
-<meta property="article:published_time" content="2020-10-07T13:59:08.000Z">
-<meta property="article:modified_time" content="2021-03-18T08:38:30.243Z">
+<meta property="og:image" content="http://example.com/2021/03/22/RegressionOfDL/Figure_1.png">
+<meta property="og:image" content="http://example.com/2021/03/22/RegressionOfDL/Regression1-1.gif">
+<meta property="article:published_time" content="2021-03-22T09:13:12.000Z">
+<meta property="article:modified_time" content="2021-03-22T09:20:46.202Z">
 <meta property="article:author" content="蒲建飞">
-<meta property="article:tag" content="opencv">
+<meta property="article:tag" content="Regression">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:image" content="http://example.com/2020/10/07/opencv%E4%B9%8B%E5%9B%BE%E5%83%8F%E7%BF%BB%E8%BD%AC/100sh.jpg">
+<meta name="twitter:image" content="http://example.com/2021/03/22/RegressionOfDL/Figure_1.png">
 
-<link rel="canonical" href="http://example.com/2020/10/07/opencv%E4%B9%8B%E5%9B%BE%E5%83%8F%E7%BF%BB%E8%BD%AC/">
+<link rel="canonical" href="http://example.com/2021/03/22/RegressionOfDL/">
 
 
 <script id="page-configurations">
@@ -49,7 +49,7 @@
   };
 </script>
 
-  <title>opencv之图像翻转 | 海盗船长的领域</title>
+  <title>RegressionOfDL | 海盗船长的领域</title>
   
 
 
@@ -165,7 +165,7 @@
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="http://example.com/2020/10/07/opencv%E4%B9%8B%E5%9B%BE%E5%83%8F%E7%BF%BB%E8%BD%AC/">
+    <link itemprop="mainEntityOfPage" href="http://example.com/2021/03/22/RegressionOfDL/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/images/002.jpg">
@@ -178,7 +178,7 @@
     </span>
       <header class="post-header">
         <h1 class="post-title" itemprop="name headline">
-          opencv之图像翻转
+          RegressionOfDL
         </h1>
 
         <div class="post-meta">
@@ -187,23 +187,17 @@
                 <i class="far fa-calendar"></i>
               </span>
               <span class="post-meta-item-text">发表于</span>
+              
 
-              <time title="创建时间：2020-10-07 21:59:08" itemprop="dateCreated datePublished" datetime="2020-10-07T21:59:08+08:00">2020-10-07</time>
+              <time title="创建时间：2021-03-22 17:13:12 / 修改时间：17:20:46" itemprop="dateCreated datePublished" datetime="2021-03-22T17:13:12+08:00">2021-03-22</time>
             </span>
-              <span class="post-meta-item">
-                <span class="post-meta-item-icon">
-                  <i class="far fa-calendar-check"></i>
-                </span>
-                <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2021-03-18 16:38:30" itemprop="dateModified" datetime="2021-03-18T16:38:30+08:00">2021-03-18</time>
-              </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
                 <i class="far fa-folder"></i>
               </span>
               <span class="post-meta-item-text">分类于</span>
                 <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/opencv/" itemprop="url" rel="index"><span itemprop="name">opencv</span></a>
+                  <a href="/categories/%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0/" itemprop="url" rel="index"><span itemprop="name">深度学习</span></a>
                 </span>
             </span>
 
@@ -218,38 +212,58 @@
     <div class="post-body" itemprop="articleBody">
 
       
-        <h1 id="简单图片翻转"><a href="#简单图片翻转" class="headerlink" title="简单图片翻转"></a>简单图片翻转</h1><h2 id="图片翻转原图："><a href="#图片翻转原图：" class="headerlink" title="图片翻转原图："></a>图片翻转原图：</h2><img src="/2020/10/07/opencv%E4%B9%8B%E5%9B%BE%E5%83%8F%E7%BF%BB%E8%BD%AC/100sh.jpg" class="" title="原图展示"> 
-
-<h2 id="翻转函数介绍："><a href="#翻转函数介绍：" class="headerlink" title="翻转函数介绍："></a>翻转函数介绍：</h2><pre><code>cv.flip(img,figure)</code></pre>
-<p>figure值的含义：</p>
-<ul>
-<li>0代表x轴翻转</li>
-<li>正数y轴翻转</li>
-<li>负数xy翻转</li>
-</ul>
-<h2 id="具体编码："><a href="#具体编码：" class="headerlink" title="具体编码："></a>具体编码：</h2><pre><code>import cv2
-import numpy as np
+        <h1 id="深度学习之线性回归"><a href="#深度学习之线性回归" class="headerlink" title="深度学习之线性回归"></a>深度学习之线性回归</h1><h2 id="学习来自b站莫烦"><a href="#学习来自b站莫烦" class="headerlink" title="学习来自b站莫烦"></a>学习来自b站莫烦</h2><h3 id="代码注解如下"><a href="#代码注解如下" class="headerlink" title="代码注解如下"></a>代码注解如下</h3><pre><code>import torch
+import torch.nn.functional as F     # 激励函数都在这
 import matplotlib.pyplot as plt
 
+class Net(torch.nn.Module):  # 继承 torch 的 Module
+    def __init__(self, n_feature, n_hidden, n_output):
+        super(Net, self).__init__()     # 继承 __init__ 功能
+        # 定义每层用什么样的形式
+        self.hidden = torch.nn.Linear(n_feature, n_hidden)   # 隐藏层线性输出
+        self.predict = torch.nn.Linear(n_hidden, n_output)   # 输出层线性输出
 
-#图片翻转
-img=cv2.imread(r&quot;E:\vscode\python\text\pic\100sh.jpg&quot;)
-x=cv2.flip(img,0)#0代表x轴翻转
-y=cv2.flip(img,1)#正数y轴翻转
-xy=cv2.flip(img,-1)#负数xy翻转
-#plt中文使用
-plt.rcParams[&#39;font.family&#39;]=[&#39;SimHei&#39;]
-title=[&quot;原图BGR&quot;,&quot;x轴翻转&quot;,&quot;y轴翻转&quot;,&quot;xy翻转&quot;]
-imgs=[img,x,y,xy]
-plt.figure()
-for i in range(1,5):
-    plt.subplot(2,2,i)
-    plt.imshow(imgs[i-1])
-    plt.title(title[i-1])
-    plt.xticks([])
-    plt.yticks([])
+    def forward(self, x):   # 这同时也是 Module 中的 forward 功能
+        # 正向传播输入值, 神经网络分析出输出值
+        x = F.relu(self.hidden(x))      # 激励函数(隐藏层的线性值)
+        x = self.predict(x)             # 输出值
+        return x
+
+net = Net(n_feature=1, n_hidden=10, n_output=1)
+
+
+x = torch.unsqueeze(torch.linspace(-1, 1, 100), dim=1)  # x data (tensor), shape=(100, 1)
+y = x.pow(2) + 0.2*torch.rand(x.size())                 # noisy y data (tensor), shape=(100, 1)
+# optimizer 是训练的工具
+optimizer = torch.optim.SGD(net.parameters(), lr=0.5)  # 传入 net 的所有参数, 学习率
+loss_func = torch.nn.MSELoss()      # 预测值和真实值的误差计算公式 (均方差)
+
+
+
+# 实时画图
+plt.ion()  
+plt.show()
+
+for t in range(200):
+
+    prediction = net(x)     # 喂给 net 训练数据 x, 输出预测值
+    loss = loss_func(prediction, y)     # 计算两者的误差
+    optimizer.zero_grad()   # 清空上一步的残余更新参数值
+    loss.backward()         # 误差反向传播, 计算参数更新值
+    optimizer.step()        # 将参数更新值施加到 net 的 parameters 上
+
+    # 接着上面来
+    if  t % 5 == 0:
+        # plot and show learning process
+        plt.cla()
+        plt.scatter(x.data.numpy(), y.data.numpy())
+        plt.plot(x.data.numpy(), prediction.data.numpy(), &#39;r-&#39;, lw=5)
+        plt.text(0.5, 0, &#39;Loss=%.4f&#39; % loss.data.numpy(), fontdict=&#123;&#39;size&#39;: 20, &#39;color&#39;:  &#39;red&#39;&#125;)
+        plt.pause(0.1)
+plt.ioff()
 plt.show()</code></pre>
-<h2 id="操作效果展示："><a href="#操作效果展示：" class="headerlink" title="操作效果展示："></a>操作效果展示：</h2> <img src="/2020/10/07/opencv%E4%B9%8B%E5%9B%BE%E5%83%8F%E7%BF%BB%E8%BD%AC/opencv5_1.png" class="" title="翻转效果展示">  
+<img src="/2021/03/22/RegressionOfDL/Figure_1.png" class="" title="静态示001"> 
+<img src="/2021/03/22/RegressionOfDL/Regression1-1.gif" class="" title="动态示001">
     </div>
 
     
@@ -258,7 +272,7 @@ plt.show()</code></pre>
 
       <footer class="post-footer">
           <div class="post-tags">
-              <a href="/tags/opencv/" rel="tag"># opencv</a>
+              <a href="/tags/Regression/" rel="tag"># Regression</a>
           </div>
 
         
@@ -267,13 +281,10 @@ plt.show()</code></pre>
         
     <div class="post-nav">
       <div class="post-nav-item">
-    <a href="/2020/09/29/HSV%E9%A2%9C%E8%89%B2%E6%8F%90%E5%8F%96/" rel="prev" title="HSV颜色提取">
-      <i class="fa fa-chevron-left"></i> HSV颜色提取
+    <a href="/2021/03/19/Numpy%E5%90%8CTorch/" rel="prev" title="Numpy同Torch">
+      <i class="fa fa-chevron-left"></i> Numpy同Torch
     </a></div>
-      <div class="post-nav-item">
-    <a href="/2020/10/08/opencv%E4%B9%8B%E5%9B%BE%E7%89%87%E6%98%A0%E5%B0%84/" rel="next" title="opencv之图片仿射">
-      opencv之图片仿射 <i class="fa fa-chevron-right"></i>
-    </a></div>
+      <div class="post-nav-item"></div>
     </div>
       </footer>
     
@@ -332,7 +343,7 @@ plt.show()</code></pre>
 
       <!--noindex-->
       <div class="post-toc-wrap sidebar-panel">
-          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#%E7%AE%80%E5%8D%95%E5%9B%BE%E7%89%87%E7%BF%BB%E8%BD%AC"><span class="nav-number">1.</span> <span class="nav-text">简单图片翻转</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%9B%BE%E7%89%87%E7%BF%BB%E8%BD%AC%E5%8E%9F%E5%9B%BE%EF%BC%9A"><span class="nav-number">1.1.</span> <span class="nav-text">图片翻转原图：</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E7%BF%BB%E8%BD%AC%E5%87%BD%E6%95%B0%E4%BB%8B%E7%BB%8D%EF%BC%9A"><span class="nav-number">1.2.</span> <span class="nav-text">翻转函数介绍：</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%85%B7%E4%BD%93%E7%BC%96%E7%A0%81%EF%BC%9A"><span class="nav-number">1.3.</span> <span class="nav-text">具体编码：</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E6%93%8D%E4%BD%9C%E6%95%88%E6%9E%9C%E5%B1%95%E7%A4%BA%EF%BC%9A"><span class="nav-number">1.4.</span> <span class="nav-text">操作效果展示：</span></a></li></ol></li></ol></div>
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0%E4%B9%8B%E7%BA%BF%E6%80%A7%E5%9B%9E%E5%BD%92"><span class="nav-number">1.</span> <span class="nav-text">深度学习之线性回归</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%AD%A6%E4%B9%A0%E6%9D%A5%E8%87%AAb%E7%AB%99%E8%8E%AB%E7%83%A6"><span class="nav-number">1.1.</span> <span class="nav-text">学习来自b站莫烦</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E4%BB%A3%E7%A0%81%E6%B3%A8%E8%A7%A3%E5%A6%82%E4%B8%8B"><span class="nav-number">1.1.1.</span> <span class="nav-text">代码注解如下</span></a></li></ol></li></ol></li></ol></div>
       </div>
       <!--/noindex-->
 
