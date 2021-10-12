@@ -156,6 +156,162 @@
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="http://example.com/2021/10/12/windows10%E6%97%A0%E6%B3%95%E8%BF%9E%E6%8E%A5%E5%88%B0Internet/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/002.jpg">
+      <meta itemprop="name" content="蒲建飞">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="海盗船长的领域">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/2021/10/12/windows10%E6%97%A0%E6%B3%95%E8%BF%9E%E6%8E%A5%E5%88%B0Internet/" class="post-title-link" itemprop="url">windows10无法连接到Internet</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+              
+
+              <time title="创建时间：2021-10-12 10:21:23 / 修改时间：10:34:26" itemprop="dateCreated datePublished" datetime="2021-10-12T10:21:23+08:00">2021-10-12</time>
+            </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-folder"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/%E9%9A%8F%E7%AC%94/" itemprop="url" rel="index"><span itemprop="name">随笔</span></a>
+                </span>
+            </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <h1 id="windows10无法连接到Internet"><a href="#windows10无法连接到Internet" class="headerlink" title="windows10无法连接到Internet"></a>windows10无法连接到Internet</h1><h2 id="window10能够上网，但右下角却显示无法连接到Internet，导致WiFi无法开启。-这是window10更新的锅。"><a href="#window10能够上网，但右下角却显示无法连接到Internet，导致WiFi无法开启。-这是window10更新的锅。" class="headerlink" title="window10能够上网，但右下角却显示无法连接到Internet，导致WiFi无法开启。 这是window10更新的锅。"></a>window10能够上网，但右下角却显示无法连接到Internet，导致WiFi无法开启。 这是window10更新的锅。</h2><ul>
+<li><p>解决方案：更改注册文件，在桌面创建TXT文件，书写以下代码，后改变后缀名为 .reg。再执行该文件。重启。</p>
+<p>  Windows Registry Editor Version 5.00</p>
+<p>  [HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\NlaSvc\Parameters\Internet]<br>  “ActiveDnsProbeContent”=”131.107.255.255”<br>  “ActiveDnsProbeContentV6”=”fd3e:4f5a:5b81::1”<br>  “ActiveDnsProbeHost”=”dns.msftncsi.com”<br>  “ActiveDnsProbeHostV6”=”dns.msftncsi.com”<br>  “ActiveWebProbeContent”=”Microsoft NCSI”<br>  “ActiveWebProbeContentV6”=”Microsoft NCSI”<br>  “ActiveWebProbeHost”=”<a target="_blank" rel="noopener" href="http://www.msftncsi.com&quot;/">www.msftncsi.com&quot;</a><br>  “ActiveWebProbeHostV6”=”ipv6.msftncsi.com”<br>  “ActiveWebProbePath”=”ncsi.txt”<br>  “ActiveWebProbePathV6”=”ncsi.txt”<br>  “EnableActiveProbing”=dword:00000001<br>  “PassivePollPeriod”=dword:0000000f<br>  “StaleThreshold”=dword:0000001e<br>  “WebTimeout”=dword:00000023</p>
+<p>  [HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\NlaSvc\Parameters\Internet\ManualProxies]</p>
+</li>
+</ul>
+
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="http://example.com/2021/09/02/pytorch%E4%BD%BF%E7%94%A8%E5%BF%83%E5%BE%97/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/002.jpg">
+      <meta itemprop="name" content="蒲建飞">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="海盗船长的领域">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/2021/09/02/pytorch%E4%BD%BF%E7%94%A8%E5%BF%83%E5%BE%97/" class="post-title-link" itemprop="url">pytorch使用心得</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              <time title="创建时间：2021-09-02 15:42:32" itemprop="dateCreated datePublished" datetime="2021-09-02T15:42:32+08:00">2021-09-02</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2021-09-13 18:52:14" itemprop="dateModified" datetime="2021-09-13T18:52:14+08:00">2021-09-13</time>
+              </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <h1 id="pytorch使用诸多问题"><a href="#pytorch使用诸多问题" class="headerlink" title="pytorch使用诸多问题"></a>pytorch使用诸多问题</h1><h2 id="model-train-model-eval-torch-no-grad"><a href="#model-train-model-eval-torch-no-grad" class="headerlink" title="model.train()      model.eval()     torch.no_grad()"></a>model.train()      model.eval()     torch.no_grad()</h2><h3 id="model-train"><a href="#model-train" class="headerlink" title="model.train()"></a>model.train()</h3><ul>
+<li><p>启用 Batch Normalization 和 Dropout。<br>如果模型中有BN层(Batch Normalization）和 Dropout，需要在训练时添加model.train()。model.train()是保证BN层能够用到每一批数据的均值和方差。对于Dropout，model.train()是随机取一部分网络连接来训练更新参数.</p>
+<h3 id="model-eval"><a href="#model-eval" class="headerlink" title="model.eval()"></a>model.eval()</h3></li>
+<li><p>不启用 Batch Normalization 和 Dropout。<br>如果模型中有BN层(Batch Normalization）和Dropout，在测试时添加model.eval()。model.eval()是保证BN层能够用全部训练数据的均值和方差，即测试过程中要保证BN层的均值和方差不变。对于Dropout，model.eval()是利用到了所有网络连接，即不进行随机舍弃神经元。<br>训练完train样本后，生成的模型model要用来测试样本。在model(test)之前，需要加上model.eval()，否则的话，有输入数据，即使不训练，它也会改变权值。这是model中含有BN层和Dropout所带来的的性质。</p>
+<h3 id="model-eval-和torch-no-grad-的区别"><a href="#model-eval-和torch-no-grad-的区别" class="headerlink" title="model.eval()和torch.no_grad()的区别"></a>model.eval()和torch.no_grad()的区别</h3></li>
+<li><p>在PyTorch中进行validation/test时，会使用model.eval()切换到测试模式，在该模式下：</p>
+</li>
+<li><p>主要用于通知dropout层和BN层在training和validation/test模式间切换：<br>在train模式下，dropout网络层会按照设定的参数p，设置保留激活单元的概率（保留概率=p)。BN层会继续计算数据的mean和var等参数并更新。<br>在eval模式下，dropout层会让所有的激活单元都通过，而BN层会停止计算和更新mean和var，直接使用在训练阶段已经学出的mean和var值。<br>eval模式不会影响各层的gradient计算行为，即gradient计算和存储与training模式一样，只是不进行反向传播（back probagation)。</p>
+</li>
+<li><p>而with torch.no_grad()则主要是用于停止autograd模块的工作，以起到加速和节省显存的作用。它的作用是将该with语句包裹起来的部分停止梯度的更新，从而节省了GPU算力和显存，但是并不会影响dropout和BN层的行为。<br>如果不在意显存大小和计算时间的话，仅仅使用model.eval()已足够得到正确的validation/test的结果；而with torch.no_grad()则是更进一步加速和节省gpu空间（因为不用计算和存储梯度），从而可以更快计算，也可以跑更大的batch来测试。</p>
+</li>
+</ul>
+<h2 id="torch-squeeze-和torch-unsqueeze-的用法"><a href="#torch-squeeze-和torch-unsqueeze-的用法" class="headerlink" title="torch.squeeze() 和torch.unsqueeze()的用法"></a>torch.squeeze() 和torch.unsqueeze()的用法</h2><ul>
+<li><p>torch.squeeze() 这个函数主要对数据的维度进行压缩，去掉维数为1的的维度，比如是一行或者一列这种，一个一行三列（1,3）的数去掉第一个维数为一的维度之后就变成（3）行。squeeze(a)就是将a中所有为1的维度删掉。不为1的维度没有影响。a.squeeze(N) 就是去掉a中指定的维数为一的维度。还有一种形式就是b=torch.squeeze(a，N) a中去掉指定的定的维数为一的维度。</p>
+</li>
+<li><p>torch.unsqueeze()这个函数主要是对数据维度进行扩充。给指定位置加上维数为一的维度，比如原本有个三行的数据（3），在0的位置加了一维就变成一行三列（1,3）。a.squeeze(N) 就是在a中指定位置N加上一个维数为1的维度。还有一种形式就是b=torch.squeeze(a，N) a就是在a中指定位置N加上一个维数为1的维度</p>
+</li>
+</ul>
+
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
     <link itemprop="mainEntityOfPage" href="http://example.com/2021/08/03/Swin-Transforemer%E7%BD%91%E7%BB%9C/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -1222,194 +1378,6 @@ plt.show()</code></pre>
   
   
 
-      
-  
-  
-  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="http://example.com/2020/09/27/opencv%E4%B9%8B%E5%BD%A2%E4%BD%93%E5%AD%A6%E6%93%8D%E4%BD%9C/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/002.jpg">
-      <meta itemprop="name" content="蒲建飞">
-      <meta itemprop="description" content="">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="海盗船长的领域">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          
-            <a href="/2020/09/27/opencv%E4%B9%8B%E5%BD%A2%E4%BD%93%E5%AD%A6%E6%93%8D%E4%BD%9C/" class="post-title-link" itemprop="url">openCV之形体学操作</a>
-        </h2>
-
-        <div class="post-meta">
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-calendar"></i>
-              </span>
-              <span class="post-meta-item-text">发表于</span>
-
-              <time title="创建时间：2020-09-27 21:30:00" itemprop="dateCreated datePublished" datetime="2020-09-27T21:30:00+08:00">2020-09-27</time>
-            </span>
-              <span class="post-meta-item">
-                <span class="post-meta-item-icon">
-                  <i class="far fa-calendar-check"></i>
-                </span>
-                <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2021-03-18 16:38:36" itemprop="dateModified" datetime="2021-03-18T16:38:36+08:00">2021-03-18</time>
-              </span>
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-folder"></i>
-              </span>
-              <span class="post-meta-item-text">分类于</span>
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/opencv/" itemprop="url" rel="index"><span itemprop="name">opencv</span></a>
-                </span>
-            </span>
-
-          
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-          <h1 id="形体学操作，从图像分量信息"><a href="#形体学操作，从图像分量信息" class="headerlink" title="形体学操作，从图像分量信息"></a>形体学操作，从图像分量信息</h1><p>常应用：</p>
-<ul>
-<li>视觉检测</li>
-<li>文字识别</li>
-<li>医学图像处理</li>
-<li>图像压缩编码</li>
-</ul>
-<p>具体编码如下：</p>
-<pre><code>#形态学操作
-import matplotlib.pyplot as plt
-import cv2
-import numpy as np
-img=cv2.imread(r&quot;E:\vscode\python\text\pic\zhexiantu002.jpg&quot;)
-k1=np.ones((3,3),np.uint8)
-#腐蚀,(这里针对白色)iterations=3腐蚀次数，默认一次
-img001=cv2.erode(img,k1,iterations=1)
-#膨胀
-img002=cv2.dilate(img,k1)
-k=np.ones((2,2),np.uint8)
-#开运算
-img003=cv2.morphologyEx(img,cv2.MORPH_OPEN,k,iterations=3)
-#闭运算
-img004=cv2.morphologyEx(img,cv2.MORPH_CLOSE,k,iterations=3)
-#形体学梯度运算（膨胀减原图）
-img005=cv2.morphologyEx(img,cv2.MORPH_GRADIENT,k)
-
-#礼帽运算（原图减开运算图）,获得噪点或更亮的边缘信息
-img006=cv2.morphologyEx(img,cv2.MORPH_TOPHAT,k)
-
-#黑帽运算（闭图像减原图）
-img007=cv2.morphologyEx(img,cv2.MORPH_BLACKHAT,k)
-
-title=[&quot;原图&quot;,&quot;腐蚀&quot;,&quot;膨胀&quot;,&quot;开运算&quot;,&quot;闭运算&quot;,&quot;形体学梯度运算（膨胀减原图）&quot;,&quot;礼帽运算（原图减开运算图）&quot;,&quot;黑帽运算（闭图像减原图）&quot;]
-imgs=[img,img001,img002,img003,img005,img006,img007]
-plt.rcParams[&#39;font.family&#39;]=[&#39;SimHei&#39;]
-plt.figure()
-for i in range(1,len(imgs)+1):
-    plt.subplot(3,3,i)
-    #if(np.max(imgs[i-1]) is not None):
-    plt.imshow(imgs[i-1])
-    plt.title(title[i-1])
-    plt.xticks([])
-    plt.yticks([])
-plt.show()</code></pre>
-<h2 id="图片效果展示："><a href="#图片效果展示：" class="headerlink" title="图片效果展示："></a>图片效果展示：</h2><p><img src="/images/opencv8_1.png" alt="opencv形体学"></p>
-<hr>
-<h3 id="在图片中腐蚀时会发现彩色线条反而加粗了，这是因为"><a href="#在图片中腐蚀时会发现彩色线条反而加粗了，这是因为" class="headerlink" title="在图片中腐蚀时会发现彩色线条反而加粗了，这是因为"></a>在图片中腐蚀时会发现彩色线条反而加粗了，这是因为</h3><pre><code>k1=np.ones((3,3),np.uint8) </code></pre>
-<h3 id="生成了一个全1的3-3矩阵k1，全1为白色，在与图像代表的矩阵进行运算时，白色区域被腐蚀，而非白色区域反而得到了加强。膨胀同理。"><a href="#生成了一个全1的3-3矩阵k1，全1为白色，在与图像代表的矩阵进行运算时，白色区域被腐蚀，而非白色区域反而得到了加强。膨胀同理。" class="headerlink" title="生成了一个全1的3*3矩阵k1，全1为白色，在与图像代表的矩阵进行运算时，白色区域被腐蚀，而非白色区域反而得到了加强。膨胀同理。"></a>生成了一个全1的3*3矩阵k1，全1为白色，在与图像代表的矩阵进行运算时，白色区域被腐蚀，而非白色区域反而得到了加强。膨胀同理。</h3><p>（另：开运算指图像先进行腐蚀再膨胀，可去噪，计数等；闭运算指图像先进行膨胀再腐蚀，可去除图像中的小黑点等）</p>
-
-      
-    </div>
-
-    
-    
-    
-      <footer class="post-footer">
-        <div class="post-eof"></div>
-      </footer>
-  </article>
-  
-  
-  
-
-      
-  
-  
-  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="http://example.com/2020/09/14/hexo-Github-Gitee%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/002.jpg">
-      <meta itemprop="name" content="蒲建飞">
-      <meta itemprop="description" content="">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="海盗船长的领域">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          
-            <a href="/2020/09/14/hexo-Github-Gitee%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA/" class="post-title-link" itemprop="url">hexo+Github+Gitee个人博客搭建</a>
-        </h2>
-
-        <div class="post-meta">
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-calendar"></i>
-              </span>
-              <span class="post-meta-item-text">发表于</span>
-              
-
-              <time title="创建时间：2020-09-14 19:13:40 / 修改时间：19:16:43" itemprop="dateCreated datePublished" datetime="2020-09-14T19:13:40+08:00">2020-09-14</time>
-            </span>
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-folder"></i>
-              </span>
-              <span class="post-meta-item-text">分类于</span>
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/%E6%8A%80%E6%9C%AF%E9%9A%8F%E7%AC%94/" itemprop="url" rel="index"><span itemprop="name">技术随笔</span></a>
-                </span>
-            </span>
-
-          
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-          <h1 id="hexo-Github-Gitee个人博客搭建"><a href="#hexo-Github-Gitee个人博客搭建" class="headerlink" title="hexo+Github+Gitee个人博客搭建"></a>hexo+Github+Gitee个人博客搭建</h1><h2 id="测试中。。。。。。。"><a href="#测试中。。。。。。。" class="headerlink" title="测试中。。。。。。。"></a>测试中。。。。。。。</h2>
-      
-    </div>
-
-    
-    
-    
-      <footer class="post-footer">
-        <div class="post-eof"></div>
-      </footer>
-  </article>
-  
-  
-  
-
 
   
   <nav class="pagination">
@@ -1481,20 +1449,20 @@ plt.show()</code></pre>
       <div class="site-state-item site-state-posts">
           <a href="/archives/">
         
-          <span class="site-state-item-count">11</span>
+          <span class="site-state-item-count">13</span>
           <span class="site-state-item-name">日志</span>
         </a>
       </div>
       <div class="site-state-item site-state-categories">
             <a href="/categories/">
           
-        <span class="site-state-item-count">5</span>
+        <span class="site-state-item-count">6</span>
         <span class="site-state-item-name">分类</span></a>
       </div>
       <div class="site-state-item site-state-tags">
             <a href="/tags/">
           
-        <span class="site-state-item-count">6</span>
+        <span class="site-state-item-count">7</span>
         <span class="site-state-item-name">标签</span></a>
       </div>
   </nav>
